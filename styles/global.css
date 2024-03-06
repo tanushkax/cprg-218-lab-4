@@ -1,0 +1,18 @@
+.container {
+  margin: 3rem auto;
+  max-width: 75rem;
+  padding: 3rem 1.5rem;
+  position: relative;
+}
+
+.header-container {
+  background-color: #DDDDDD;
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.option-container {
+  text-align: center;
+  background-color: #EEEEEE;
+  padding: 3rem 1rem;
+}

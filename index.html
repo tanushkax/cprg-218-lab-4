@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="/styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="/styles/global.css">
+  <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezI/5X2EG9R4PnJ+bM5AqMqAPD+FuEZlGsBGr0qJ/GDe5eg5zZL3A6pQV4s4kgxj" crossorigin="anonymous">
+
+  <title>Common Website Features</title>
+  <style>
+    @media (max-width: 768px) {
+      .footer-left, .footer-center {
+        border-right: none;
+        padding: 10px 0;
+      }
+      .footer-center {
+        padding-left: 0;
+      }
+      .footer-content {
+        flex-direction: column;
+      }
+      .google-map iframe {
+        height: 200px; 
+      }
+    }
+    .remove-assignment-content {
+            font-family: "Roboto", sans-serif;
+            font-size: 2rem;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+  </style>
+
+
+
+</head>
+<body>
+  <section class="hero-container">
+    <div class="hero-content">
+      <h1>Expressing Passion through my Pencil Sketches</h1>
+      <p>Explore the world of my sketches and the stories they tell</p>
+    </div>
+    <img src="styles/pictures/download (3).jpeg" alt="charcoal drawing">
+  </section>
+
+  <section class="content-container">
+    <div class="text-half">
+      <h2>Hatching technique sketches</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, vero, in maxime, labore soluta nisi esse fugiat cumque ipsum optio adipisci perspiciatis fugit odio. Exercitationem quis at delectus aut laborum.</p>
+      <button class="explore-button">View More</button>
+    </div>
+<div class="image-half">
+  <img src="styles/pictures/Harmony in Chaos.jpg" alt="charcoal drawing">
+</div>
+  </section>
+  <section class="content-container">
+    <div class="image-half">
+      <img src="styles/pictures/I Participated In The Inktober Challenge And It Helped Me Gain 13k Followers (16 Pics).jpg" alt="Another Sketch Image">
+    </div>
+    <div class="text-half">
+      <h2>Stippling technique sketches</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi voluptatum reiciendis repudiandae ut cumque odio impedit, necessitatibus dignissimos incidunt voluptas dolore ipsa voluptates possimus quibusdam adipisci inventore explicabo quas!</p>
+      <button class="explore-button">View More</button>
+    </div>
+  </section>
+  <section class="content-container">
+    <div class="text-half">
+      <h2>Doddling technique sketches</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maiores sapiente illo, sint assumenda tempore corrupti nisi explicabo nobis veritatis quidem perspiciatis dignissimos repellat iste error esse? Qui, nihil numquam!</p>
+      <button class="explore-button">View More</button>
+    </div>
+    <div class="image-half">
+      <img src="styles/pictures/download (2).jpeg" alt="Sketch Image">
+    </div>
+  </section>
+
+  <section class="container accordion-container">
+    <div class="accordion-item">
+      <button class="accordion">Tips and tricks for beginner sketchers</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis repudiandae laboriosam suscipit voluptatem illum! Repudiandae possimus quod quaerat minus qui officiis, dolor numquam facilis totam, vero dolore excepturi. Aliquid, nam!</p>
+      </div>
+    </div>
+  
+    <div class="accordion-item">
+      <button class="accordion">Tools and types of pencils best for graphite sketching</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint eveniet alias quis adipisci quae, doloremque distinctio, repellendus perspiciatis libero reprehenderit corporis id cupiditate sed assumenda rerum quo dolorem asperiores!</p>
+      </div>
+    </div>
+  
+    <div class="accordion-item">
+      <button class="accordion">Ways to find your own sketching style</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta saepe eaque modi nostrum hic reprehenderit neque in fugiat impedit dolore quod, laborum maxime atque, autem accusamus molestias officia ipsam?</p>
+      </div>
+    </div>
+  </section>
+  
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var accItems = document.getElementsByClassName("accordion-item");
+
+    for (var i = 0; i < accItems.length; i++) {
+      (function () {
+        var accordionItem = accItems[i];
+
+        accordionItem.addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.querySelector(".panel"); 
+
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      })();
+    }
+  });
+</script>
+</head>
+<body>
+  <section class="footer-container">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <h2>About Me</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsam veniam molestias, architecto assumenda laborum modi placeat culpa corporis corrupti doloremque rem adipisci repudiandae reprehenderit, minima dolore repellendus maxime eius.</p>
+        </div>
+        <div class="footer-center">
+          <h2>Contact Information</h2>
+          <p>Email: tanushka1234@email.com</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Instagram: tanushkax</p>
+  
+         
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+  
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.2863357514707!2d-114.09097782374957!3d51.066264142834235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f8dfc0a4e07%3A0xd4279bc8690061a2!2sSait%20St%20NW%2C%20Calgary%2C%20AB!5e0!3m2!1sen!2sca!4v1709712534898!5m2!1sen!2sca"
+            width="100%"
+            height="250"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+  
+      <p class="copyright" style="text-align: center;">© 2024 Tanushka's website. All Rights Reserved.</p>
+    </footer>
+  </section>
+  </body>
+  </html>
+  
+
+
+
+
+
+
+
+
+
+
+  
